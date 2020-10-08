@@ -10,21 +10,19 @@ knitr::opts_chunk$set(echo = TRUE)
 library(readxl)
 library(dplyr)
 library(ggplot2)
-# set seed to make the randomized process reporducible
+library(readr)
+library(writexl)
 set.seed(123)
+# set seed to make the randomized process reporducible
+
 ```
 
 
 ```{r}
 # insert the 2016 census report
 census <- read_excel("10952320201004121154.xlsx")
-census
 
 # Find the ratio of sex and age group
-# age under 18 MALE
-male_u18 <- census[22, ]$Male - census[27, ]$Male
-# age under 18 FEMALE
-female_u18 <- census[22, ]$Female - census[27, ]$Female
 # male age range 18-24
 male_18_24 <- census[26, ]$Male + census[27, ]$Male + census[28, ]$Male
 # female age range 18-24
@@ -51,85 +49,81 @@ male_65p <- census[82, ]$Male
 female_65p <- census[82, ]$Female
 
 
-male <- c(male_u18, male_18_24, male_25_34, male_35_44, male_45_54, male_55_64, male_65p)
-female <- c(female_u18, female_18_24, female_25_34, female_35_44,female_45_54, female_55_64, female_65p)
+male <- c(male_18_24, male_25_34, male_35_44, male_45_54, male_55_64, male_65p)
+female <- c(female_18_24, female_25_34, female_35_44,female_45_54, female_55_64, female_65p)
 total <- male + female
 ratio_total <- total/sum(total)
 sex_ratio_male <- male/total
 sex_ratio_female <- female/total
 sample_size_total <- round(2000*ratio_total)
+sample_size_total[1] <- sample_size_total[1]+1
 sample_size_male <- round(sample_size_total*sex_ratio_male)
 sample_size_female <- round(sample_size_total*sex_ratio_female)
 
 ratio_male_age <- male/sum(male)
 ratio_female_age <- female/sum(female)
-demo_table <- tibble(male, ratio_male_age, sex_ratio_male, sample_size_male, female, ratio_female_age,
-                     sex_ratio_female, sample_size_female, total, ratio_total, sample_size_total)
-rownames(demo_table) <- c("Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "64+")
+demo_table <- tibble(male, ratio_male_age, sex_ratio_male, sample_size_male, female, ratio_female_age, sex_ratio_female, sample_size_female, total, ratio_total, sample_size_total)
+rownames(demo_table) <- c("18-24", "25-34", "35-44", "45-54", "55-64", "65+")
 demo_table <- as.data.frame(demo_table)
 
-age <- as.integer(sample(x = c(1:18), size = demo_table$sample_size_male[1], replace = TRUE))
+age <- c(replicate(demo_table$sample_size_male[1], "18-24"))
 sex <- c(replicate(demo_table$sample_size_male[1], "Male"))
 age_table <- as.data.frame(cbind(age, sex))
-age <- sample(x = c(19:24), size = demo_table$sample_size_male[2], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_male[2], "25-34"))
 sex <- c(replicate(demo_table$sample_size_male[2], "Male"))
 age_table <- rbind(age_table, cbind(age, sex))
-age <- sample(x = c(25:34), size = demo_table$sample_size_male[3], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_male[3], "35-44"))
 sex <- c(replicate(demo_table$sample_size_male[3], "Male"))
 age_table <- rbind(age_table, cbind(age, sex))
-age <- sample(x = c(35:44), size = demo_table$sample_size_male[4], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_male[4], "45-54"))
 sex <- c(replicate(demo_table$sample_size_male[4], "Male"))
 age_table <- rbind(age_table, cbind(age, sex))
-age <- sample(x = c(45:54), size = demo_table$sample_size_male[5], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_male[5], "55-64"))
 sex <- c(replicate(demo_table$sample_size_male[5], "Male"))
 age_table <- rbind(age_table, cbind(age, sex))
-age<- sample(x = c(55:64), size = demo_table$sample_size_male[6], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_male[6], "65+"))
 sex <- c(replicate(demo_table$sample_size_male[6], "Male"))
 age_table <- rbind(age_table, cbind(age, sex))
-age<- sample(x = c(65:100), size = demo_table$sample_size_male[7], replace = TRUE)
-sex <- c(replicate(demo_table$sample_size_male[7], "Male"))
-age_table <- rbind(age_table, cbind(age, sex))
 
-age <- as.integer(sample(x = c(1:18), size = demo_table$sample_size_female[1], replace = TRUE))
+age <- c(replicate(demo_table$sample_size_female[1], "18-24"))
 sex <- c(replicate(demo_table$sample_size_female[1], "Female"))
 age_table_f <- as.data.frame(cbind(age, sex))
-age <- sample(x = c(19:24), size = demo_table$sample_size_female[2], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_female[2], "25-34"))
 sex <- c(replicate(demo_table$sample_size_female[2], "Female"))
 age_table_f <- rbind(age_table_f, cbind(age, sex))
-age <- sample(x = c(25:34), size = demo_table$sample_size_female[3], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_female[3], "35-44"))
 sex <- c(replicate(demo_table$sample_size_female[3], "Female"))
 age_table_f <- rbind(age_table_f, cbind(age, sex))
-age <- sample(x = c(35:44), size = demo_table$sample_size_female[4], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_female[4], "45-54"))
 sex <- c(replicate(demo_table$sample_size_female[4], "Female"))
 age_table_f <- rbind(age_table_f, cbind(age, sex))
-age <- sample(x = c(45:54), size = demo_table$sample_size_female[5], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_female[5], "55-64"))
 sex <- c(replicate(demo_table$sample_size_female[5], "Female"))
 age_table_f <- rbind(age_table_f, cbind(age, sex))
-age<- sample(x = c(55:64), size = demo_table$sample_size_female[6], replace = TRUE)
+age <- c(replicate(demo_table$sample_size_female[6], "65+"))
 sex <- c(replicate(demo_table$sample_size_female[6], "Female"))
-age_table_f <- rbind(age_table_f, cbind(age, sex))
-age<- sample(x = c(65:100), size = demo_table$sample_size_female[7], replace = TRUE)
-sex <- c(replicate(demo_table$sample_size_female[7], "Female"))
 age_table_f <- rbind(age_table_f, cbind(age, sex))
 age <- rbind(age_table, age_table_f)
 
 # randomized the order of the data
 rows <- sample(nrow(age))
 age <- age[rows, ]
+colnames(age) <- c("How old are you?", "Please indicate your sex")
 
 # simulate the provinces
 provinces <- c("British Columbia","Alberta", "Saskatchewan", "Manitoba", "Ontario", 
-               "Quebec", "New Brunswick", "Nova Soctia", "Prince-Edward-Island", 
-               "Newfoundland and Labrador", "Northwest Territories", "Nunavut")
-province_ratio <- c(0.135, 0.116, 0.031, 0.036, 0.388, 0.226, 0.021, 0.026, 0.004, 
-                    0.014, 0.001, 0.001)
-province <- sample(x = provinces, prob = province_ratio, size = 2000, replace = TRUE)
+               "Quebec", "New Brunswick", "Nova Scotia", "Prince-Edward-Island", 
+               "Newfoundland and Labrador", "Northwest Territories", "Nunavut", "Yukon")
+province_ratio <- c(0.1322, 0.1157, 0.0312, 0.0363, 0.3826, 0.2323, 0.0213, 0.0263, 0.0041, 
+                    0.0148, 0.0012, 0.001, 0.001)
+province <- as.data.frame(sample(x = provinces, prob = province_ratio, size = 2000, replace = TRUE))
+colnames(province) <- "Which province or territory do you live in?"
 data <- as.data.frame(cbind(age, province))
 rownames(data) <- c(1:nrow(data))
 
 
 #degree
-library(readr)
+
 education<- read_csv("98-402-X2016010-11.csv") 
 degree_list <- c("No certificate, diploma or degree", 
                  "Secondary (high) school diploma or equivalency certificate", 
@@ -138,32 +132,35 @@ degree_list <- c("No certificate, diploma or degree",
                  "University certificate or diploma below bachelor level", 
                  "University certificate, diploma or degree at bachelor level or above")
 degree_ratio <- c(0.115, 0.237, 0.108, 0.224, 0.031, 0.285)
-degree <- sample(x = degree_list, prob = degree_ratio, size = 2000, replace = TRUE)
+degree <- as.data.frame(sample(x = degree_list, prob = degree_ratio, size = 2000, replace = TRUE))
+colnames(degree) <- "What is your highest education level?"
 data <- as.data.frame(cbind(data, degree))
 
 # sample of whether people are following the upcoming election (Based on the turnout rate in)
 answers <- c("Yes", "No")
 follow_ratio <- c(0.6595, 1-0.6595)
-follow_election <- sample(x = answers, prob = follow_ratio, size = 2000, replace = TRUE)
+follow_election <- as.data.frame(sample(x = answers, prob = follow_ratio, size = 2000, replace = TRUE))
+colnames(follow_election) <- "Have you been following the election?"
 data <- as.data.frame(cbind(data, follow_election))
 
 # sample how much people value their alignment with the candidates
 n <- 2000
 align_prob <- c(0, 0.0, 0.01, 0.015, 0.020, 0.025, 0.05, 0.15, 0.38, 0.35)
-sum(align_prob)
-align <- sample(c(1:10), size = 2000, prob = align_prob, replace = TRUE)
-sum(align)/2000
+align <- as.data.frame(sample(c(1:10), size = 2000, prob = align_prob, replace = TRUE))
+colnames(align) <- "How much do you value the alignment between you and the candidate's policies?"
 data <- as.data.frame(cbind(data, align))
 
 # sample Satisfaction
 sat_list <- c("Very Satisfied", "Somewhat Satisfied", "Somewhat Dissatisfied", 
               "Very Dissatisfied", "No Opinion")
 sat_prob <- c(0.05, 0.45, 0.3, 0.15, 0.05)
-sat <- sample(sat_list, size = 2000, prob = sat_prob, replace = TRUE)
+sat <- as.data.frame(sample(sat_list, size = 2000, prob = sat_prob, replace = TRUE))
+colnames(sat) <- "How's your satisfaction with the current Canadian government?"
 data <- as.data.frame(cbind(data, sat))
 
 # sample COVID response
-response <- data.frame('COVID-reponse' = 10-c(rpois(2000, 3)))
+response <- as.data.frame(c(10-c(rpois(2000, 3))))
+colnames(response) <- "How would you rate the current government's response on combating COVID-19?"
 data <- as.data.frame(cbind(data, response))
 
 # most important issue
@@ -171,18 +168,20 @@ issues <- c("The Economy/Jobs", "Environment", "Health Care",
             "Housing/Homelessness/Proverty", 
             "Accountability/Leadership", "Energy/Piplines", "Crime/Public Safety", "Foreign Affairs")
 issue_ratio <- c(0.35, 0.10, 0.25, 0.10, 0.10, 0.03, 0.02, 0.05)
-issue <- sample(issues, size = 2000, prob = issue_ratio, replace = TRUE)
+issue <- as.data.frame(sample(issues, size = 2000, prob = issue_ratio, replace = TRUE))
+colnames(issue) <- "In your opinion, what is the most important issue facing in Canada today?"
 data <- as.data.frame(cbind(data, issue))
 
 # sample canadidates
 cand_list <- c("Justin Trudeau's Liberal Party of Canada",
                "Jagmeet Singh's New Democratic Party of Canada",
-               "Andrew Scheer's Conservative Party of Canada",
-               "Elizabeth May's Green Party of Canada",
-               "Others", 
-               "I prefer not to answer")
-cand_prob <- c(0.364, 0.177, 0.310, 0.059, 0.08, 0.01)
-cand <- sample(cand_list, size = 2000, prob = cand_prob, replace = TRUE)
+               "Erin O’Toole's Conservative Party of Canada",
+               "Annamie Paul's Green Party of Canada",
+               "Yves-Francois Blanchet's Bloc Québécois",
+               "Others")
+cand_prob <- c(0.364, 0.177, 0.310, 0.059, 0.068, 0.022)
+cand <- as.data.frame(sample(cand_list, size = 2000, prob = cand_prob, replace = TRUE))
+colnames(cand) <- "If the Federal Election were being held today, who would you vote for?"
 data <- as.data.frame(cbind(data, cand))
 
 # sampel timestamp
@@ -195,7 +194,11 @@ data <- data %>%
   select("Timestamp", everything())
 ```
 
-
+# Export the dataframe
+```{r}
+write.csv(data, "/Users/frankhung/Documents/FHDocument/2020_2021/STA304/Assignments/Assignment\ 2/election_simulation/election_data.csv")
+write_xlsx(data, "/Users/frankhung/Documents/FHDocument/2020_2021/STA304/Assignments/Assignment\ 2/election_simulation/election_data.xlsx")
+```
 
 
 # Notes
