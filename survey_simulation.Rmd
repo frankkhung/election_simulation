@@ -195,7 +195,8 @@ data <- data %>%
 ```
 
 # Export the dataframe
-```{r}
+```{r, eval=FALSE}
+# write the dataframe into csv and xlsx format to make it accessible in other fiels
 write.csv(data, "/Users/frankhung/Documents/FHDocument/2020_2021/STA304/Assignments/Assignment\ 2/election_simulation/election_data.csv")
 write_xlsx(data, "/Users/frankhung/Documents/FHDocument/2020_2021/STA304/Assignments/Assignment\ 2/election_simulation/election_data.xlsx")
 ```
