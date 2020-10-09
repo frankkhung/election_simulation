@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.31)  9 OCT 2020 02:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.31)  9 OCT 2020 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,16 +974,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 81.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 133.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 85.
+(Font)              <10> on input line 137.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 85.
+(Font)              <7> on input line 137.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 85.
+(Font)              <5> on input line 137.
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
@@ -993,7 +994,7 @@ File: election_result_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (ty
 pe pdf)
 <use election_result_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: election_result_files/figure-latex/unnamed-chunk-7-1.p
-df used on input line 223.
+df used on input line 228.
 (pdftex.def)             Requested size: 457.72285pt x 313.17877pt.
 [3 <./election_result_files/figure-latex/unnamed-chunk-7-1.pdf>]
 <election_result_files/figure-latex/unnamed-chunk-8-1.pdf, id=109, 463.7325pt x
@@ -1002,7 +1003,7 @@ File: election_result_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (ty
 pe pdf)
 <use election_result_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: election_result_files/figure-latex/unnamed-chunk-8-1.p
-df used on input line 232.
+df used on input line 237.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
 
 <election_result_files/figure-latex/unnamed-chunk-9-1.pdf, id=110, 463.7325pt x
@@ -1011,7 +1012,7 @@ File: election_result_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (ty
 pe pdf)
 <use election_result_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: election_result_files/figure-latex/unnamed-chunk-9-1.p
-df used on input line 244.
+df used on input line 249.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
 [4 <./election_result_files/figure-latex/unnamed-chunk-8-1.pdf>]
 <election_result_files/figure-latex/unnamed-chunk-11-1.pdf, id=124, 457.71pt x 
@@ -1020,382 +1021,397 @@ File: election_result_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (t
 ype pdf)
 <use election_result_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: election_result_files/figure-latex/unnamed-chunk-11-1.
-pdf used on input line 281.
+pdf used on input line 286.
 (pdftex.def)             Requested size: 457.72984pt x 316.19493pt.
 [5 <./election_result_files/figure-latex/unnamed-chunk-9-1.pdf>]
-Overfull \hbox (12.5079pt too wide) in paragraph at lines 324--325
+Overfull \hbox (12.5079pt too wide) in paragraph at lines 329--330
  []\T1/lmr/m/n/10 (-20) 45_54|
  []
 
 
-Overfull \hbox (3.33034pt too wide) in paragraph at lines 328--329
+Overfull \hbox (3.33034pt too wide) in paragraph at lines 333--334
  []\T1/lmr/m/n/10 (-20) 65+|
  []
 
 
-Overfull \hbox (14.17374pt too wide) in paragraph at lines 330--331
+Overfull \hbox (14.17374pt too wide) in paragraph at lines 335--336
  []\T1/lmr/m/n/10 (-20) Ontario|
  []
 
 
-Overfull \hbox (13.53252pt too wide) in paragraph at lines 334--335
+Overfull \hbox (13.53252pt too wide) in paragraph at lines 339--340
  []\T1/lmr/m/n/10 (-20) Alberta|
  []
 
 
-Overfull \hbox (13.0688pt too wide) in paragraph at lines 336--337
+Overfull \hbox (13.0688pt too wide) in paragraph at lines 341--342
  []\T1/lmr/m/n/10 (-20) Quebec|
  []
 
 
-Overfull \hbox (10.97992pt too wide) in paragraph at lines 338--339
+Overfull \hbox (10.97992pt too wide) in paragraph at lines 343--344
  []\T1/lmr/m/n/10 (-20) Other|
  []
 
 
-Overfull \hbox (8.12556pt too wide) in paragraph at lines 340--341
+Overfull \hbox (8.12556pt too wide) in paragraph at lines 345--346
  []\T1/lmr/m/n/10 (-20) Total|
  []
 
 
-Overfull \hbox (12.5079pt too wide) in paragraph at lines 354--355
+Overfull \hbox (12.5079pt too wide) in paragraph at lines 359--360
  []\T1/lmr/m/n/10 (-20) 45_54|
  []
 
 
-Overfull \hbox (3.33034pt too wide) in paragraph at lines 358--359
+Overfull \hbox (3.33034pt too wide) in paragraph at lines 363--364
  []\T1/lmr/m/n/10 (-20) 65+|
  []
 
 
-Overfull \hbox (14.17374pt too wide) in paragraph at lines 360--361
+Overfull \hbox (14.17374pt too wide) in paragraph at lines 365--366
  []\T1/lmr/m/n/10 (-20) Ontario|
  []
 
 
-Overfull \hbox (13.53252pt too wide) in paragraph at lines 364--365
+Overfull \hbox (13.53252pt too wide) in paragraph at lines 369--370
  []\T1/lmr/m/n/10 (-20) Alberta|
  []
 
 
-Overfull \hbox (13.0688pt too wide) in paragraph at lines 366--367
+Overfull \hbox (13.0688pt too wide) in paragraph at lines 371--372
  []\T1/lmr/m/n/10 (-20) Quebec|
  []
 
 
-Overfull \hbox (10.97992pt too wide) in paragraph at lines 368--369
+Overfull \hbox (10.97992pt too wide) in paragraph at lines 373--374
  []\T1/lmr/m/n/10 (-20) Other|
  []
 
 
-Overfull \hbox (8.12556pt too wide) in paragraph at lines 370--371
+Overfull \hbox (8.12556pt too wide) in paragraph at lines 375--376
  []\T1/lmr/m/n/10 (-20) Total|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 377--378
- []\T1/lmr/m/n/10 (-20) 35.91|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 382--383
+ []\T1/lmr/m/n/10 (-20) 34.55|
  []
 
 
-Overfull \hbox (7.8801pt too wide) in paragraph at lines 379--380
- []\T1/lmr/m/n/10 (-20) 40.85|
+Overfull \hbox (7.8801pt too wide) in paragraph at lines 384--385
+ []\T1/lmr/m/n/10 (-20) 40.55|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 381--382
- []\T1/lmr/m/n/10 (-20) 36.53|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 386--387
+ []\T1/lmr/m/n/10 (-20) 33.13|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 383--384
- []\T1/lmr/m/n/10 (-20) 32.96|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 388--389
+ []\T1/lmr/m/n/10 (-20) 39.11|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 385--386
- []\T1/lmr/m/n/10 (-20) 37.54|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 390--391
+ []\T1/lmr/m/n/10 (-20) 34.10|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 387--388
- []\T1/lmr/m/n/10 (-20) 36.97|
+Overfull \hbox (7.8801pt too wide) in paragraph at lines 392--393
+ []\T1/lmr/m/n/10 (-20) 40.05|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 389--390
- []\T1/lmr/m/n/10 (-20) 34.66|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 394--395
+ []\T1/lmr/m/n/10 (-20) 35.54|
  []
 
 
-Overfull \hbox (3.18513pt too wide) in paragraph at lines 393--394
- []\T1/lmr/m/n/10 (-20) 41.95|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 398--399
+ []\T1/lmr/m/n/10 (-20) 39.32|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 395--396
- []\T1/lmr/m/n/10 (-20) 37.23|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 400--401
+ []\T1/lmr/m/n/10 (-20) 37.07|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 397--398
- []\T1/lmr/m/n/10 (-20) 36.96|
- []
-
-
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 399--400
- []\T1/lmr/m/n/10 (-20) 36.8|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 402--403
+ []\T1/lmr/m/n/10 (-20) 34.47|
  []
 
 
 Overfull \hbox (7.9801pt too wide) in paragraph at lines 404--405
- []\T1/lmr/m/n/10 (-20) 28.64|
+ []\T1/lmr/m/n/10 (-20) 37.20|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 406--407
- []\T1/lmr/m/n/10 (-20) 30.18|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 409--410
+ []\T1/lmr/m/n/10 (-20) 29.09|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 408--409
- []\T1/lmr/m/n/10 (-20) 31.89|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 411--412
+ []\T1/lmr/m/n/10 (-20) 27.44|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 410--411
- []\T1/lmr/m/n/10 (-20) 30.73|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 413--414
+ []\T1/lmr/m/n/10 (-20) 33.13|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 412--413
- []\T1/lmr/m/n/10 (-20) 30.66|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 415--416
+ []\T1/lmr/m/n/10 (-20) 35.20|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 414--415
- []\T1/lmr/m/n/10 (-20) 32.23|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 417--418
+ []\T1/lmr/m/n/10 (-20) 32.95|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 416--417
- []\T1/lmr/m/n/10 (-20) 31.84|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 419--420
+ []\T1/lmr/m/n/10 (-20) 28.44|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 420--421
- []\T1/lmr/m/n/10 (-20) 29.66|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 421--422
+ []\T1/lmr/m/n/10 (-20) 32.89|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 422--423
- []\T1/lmr/m/n/10 (-20) 27.92|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 425--426
+ []\T1/lmr/m/n/10 (-20) 32.91|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 424--425
- []\T1/lmr/m/n/10 (-20) 32.25|
+Overfull \hbox (3.28514pt too wide) in paragraph at lines 427--428
+ []\T1/lmr/m/n/10 (-20) 30.82|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 426--427
- []\T1/lmr/m/n/10 (-20) 30.9|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 429--430
+ []\T1/lmr/m/n/10 (-20) 28.41|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 431--432
- []\T1/lmr/m/n/10 (-20) 18.64|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 431--432
+ []\T1/lmr/m/n/10 (-20) 31.10|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 433--434
- []\T1/lmr/m/n/10 (-20) 15.55|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 436--437
+ []\T1/lmr/m/n/10 (-20) 20.45|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 435--436
- []\T1/lmr/m/n/10 (-20) 17.96|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 438--439
+ []\T1/lmr/m/n/10 (-20) 14.94|
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 437--438
- []\T1/lmr/m/n/10 (-20) 20.11|
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 440--441
+ []\T1/lmr/m/n/10 (-20) 20.74|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 439--440
- []\T1/lmr/m/n/10 (-20) 18.05|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 442--443
+ []\T1/lmr/m/n/10 (-20) 15.92|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 441--442
- []\T1/lmr/m/n/10 (-20) 14.93|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 444--445
+ []\T1/lmr/m/n/10 (-20) 17.77|
  []
 
 
-Overfull \hbox (3.03514pt too wide) in paragraph at lines 443--444
- []\T1/lmr/m/n/10 (-20) 17.07|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 446--447
+ []\T1/lmr/m/n/10 (-20) 16.82|
  []
 
 
-Overfull \hbox (3.03514pt too wide) in paragraph at lines 447--448
- []\T1/lmr/m/n/10 (-20) 14.83|
+Overfull \hbox (3.03514pt too wide) in paragraph at lines 448--449
+ []\T1/lmr/m/n/10 (-20) 18.30|
  []
 
 
-Overfull \hbox (3.28514pt too wide) in paragraph at lines 449--450
- []\T1/lmr/m/n/10 (-20) 20.35|
+Overfull \hbox (3.03514pt too wide) in paragraph at lines 452--453
+ []\T1/lmr/m/n/10 (-20) 14.96|
  []
 
 
-Overfull \hbox (7.7301pt too wide) in paragraph at lines 451--452
- []\T1/lmr/m/n/10 (-20) 16.30|
+Overfull \hbox (3.03514pt too wide) in paragraph at lines 454--455
+ []\T1/lmr/m/n/10 (-20) 17.24|
  []
 
 
-Overfull \hbox (2.83011pt too wide) in paragraph at lines 453--454
- []\T1/lmr/m/n/10 (-20) 17.4|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 456--457
+ []\T1/lmr/m/n/10 (-20) 19.70|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 458--459
- []\T1/lmr/m/n/10 (-20) 7.27|
+Overfull \hbox (7.7301pt too wide) in paragraph at lines 458--459
+ []\T1/lmr/m/n/10 (-20) 17.55|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 460--461
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 463--464
+ []\T1/lmr/m/n/10 (-20) 6.82|
+ []
+
+
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 465--466
+ []\T1/lmr/m/n/10 (-20) 7.01|
+ []
+
+
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 467--468
+ []\T1/lmr/m/n/10 (-20) 5.57|
+ []
+
+
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 469--470
+ []\T1/lmr/m/n/10 (-20) 3.63|
+ []
+
+
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 471--472
+ []\T1/lmr/m/n/10 (-20) 6.30|
+ []
+
+
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 473--474
  []\T1/lmr/m/n/10 (-20) 6.40|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 462--463
- []\T1/lmr/m/n/10 (-20) 5.88|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 483--484
+ []\T1/lmr/m/n/10 (-20) 6.82|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 464--465
- []\T1/lmr/m/n/10 (-20) 6.15|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 485--486
+ []\T1/lmr/m/n/10 (-20) 5.90|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 466--467
- []\T1/lmr/m/n/10 (-20) 5.44|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 490--491
+ []\T1/lmr/m/n/10 (-20) 5.91|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 468--469
- []\T1/lmr/m/n/10 (-20) 5.92|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 492--493
+ []\T1/lmr/m/n/10 (-20) 6.10|
  []
 
 
-Overfull \hbox (2.9801pt too wide) in paragraph at lines 478--479
- []\T1/lmr/m/n/10 (-20) 4.35|
+Overfull \hbox (2.9801pt too wide) in paragraph at lines 494--495
+ []\T1/lmr/m/n/10 (-20) 4.33|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 485--486
- []\T1/lmr/m/n/10 (-20) 7.73|
+Overfull \hbox (2.9801pt too wide) in paragraph at lines 496--497
+ []\T1/lmr/m/n/10 (-20) 4.75|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 487--488
- []\T1/lmr/m/n/10 (-20) 5.49|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 498--499
+ []\T1/lmr/m/n/10 (-20) 6.59|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 489--490
- []\T1/lmr/m/n/10 (-20) 6.50|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 500--501
+ []\T1/lmr/m/n/10 (-20) 6.64|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 491--492
- []\T1/lmr/m/n/10 (-20) 6.70|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 510--511
+ []\T1/lmr/m/n/10 (-20) 6.82|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 493--494
- []\T1/lmr/m/n/10 (-20) 6.02|
+Overfull \hbox (3.33011pt too wide) in paragraph at lines 512--513
+ []\T1/lmr/m/n/10 (-20) 5.75|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 495--496
- []\T1/lmr/m/n/10 (-20) 7.82|
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 517--518
+ []\T1/lmr/m/n/10 (-20) 3.18|
  []
 
 
-Overfull \hbox (3.33011pt too wide) in paragraph at lines 505--506
- []\T1/lmr/m/n/10 (-20) 6.88|
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 519--520
+ []\T1/lmr/m/n/10 (-20) 3.96|
  []
 
 
-Overfull \hbox (2.83011pt too wide) in paragraph at lines 512--513
- []\T1/lmr/m/n/10 (-20) 1.82|
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 521--522
+ []\T1/lmr/m/n/10 (-20) 3.10|
  []
 
 
-Overfull \hbox (2.83011pt too wide) in paragraph at lines 514--515
- []\T1/lmr/m/n/10 (-20) 1.52|
+Overfull \hbox (2.83011pt too wide) in paragraph at lines 523--524
+ []\T1/lmr/m/n/10 (-20) 1.40|
  []
 
 
-Overfull \hbox (2.83011pt too wide) in paragraph at lines 516--517
- []\T1/lmr/m/n/10 (-20) 1.24|
- []
-
-
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 518--519
- []\T1/lmr/m/n/10 (-20) 3.35|
- []
-
-
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 520--521
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 525--526
  []\T1/lmr/m/n/10 (-20) 2.29|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 522--523
- []\T1/lmr/m/n/10 (-20) 2.13|
+Overfull \hbox (2.83011pt too wide) in paragraph at lines 527--528
+ []\T1/lmr/m/n/10 (-20) 1.66|
  []
 
 
-Overfull \hbox (3.08011pt too wide) in paragraph at lines 532--533
- []\T1/lmr/m/n/10 (-20) 2.90|
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 537--538
+ []\T1/lmr/m/n/10 (-20) 3.03|
+ []
+
+
+Overfull \hbox (3.08011pt too wide) in paragraph at lines 539--540
+ []\T1/lmr/m/n/10 (-20) 2.50|
  []
 
 [6 <./election_result_files/figure-latex/unnamed-chunk-11-1.pdf>] [7] <survey_d
 emo.png, id=164, 336.25626pt x 888.31876pt>
 File: survey_demo.png Graphic file (type png)
 <use survey_demo.png>
-Package pdftex.def Info: survey_demo.png used on input line 622.
+Package pdftex.def Info: survey_demo.png used on input line 627.
 (pdftex.def)             Requested size: 246.209pt x 650.43272pt.
 
-LaTeX Warning: Float too large for page by 23.94714pt on input line 624.
+LaTeX Warning: Float too large for page by 23.94714pt on input line 629.
 
 <survey_election.png, id=166, 345.29pt x 826.08624pt>
 File: survey_election.png Graphic file (type png)
 <use survey_election.png>
-Package pdftex.def Info: survey_election.png used on input line 628.
+Package pdftex.def Info: survey_election.png used on input line 633.
 (pdftex.def)             Requested size: 271.87515pt x 650.44551pt.
 
-LaTeX Warning: Float too large for page by 23.95993pt on input line 630.
+LaTeX Warning: Float too large for page by 23.95993pt on input line 635.
 
 [8] [9 <./survey_demo.png>] [10 <./survey_election.png>] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 742.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 747.
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 742.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 747.
 (./election_result.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 742.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 742.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 747.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 747.
 Package rerunfilecheck Info: File `election_result.out' has not changed.
 (rerunfilecheck)             Checksum: 6E062348716B1341CB02666A46953413;4235.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 742.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 747.
  ) 
 Here is how much of TeX's memory you used:
- 12599 strings out of 492995
- 183942 string characters out of 6132704
- 301618 words of memory out of 5000000
+ 12601 strings out of 492995
+ 183964 string characters out of 6132704
+ 301689 words of memory out of 5000000
  15850 multiletter control sequences out of 15000+600000
- 57927 words of font info for 96 fonts, out of 8000000 for 9000
+ 58010 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,6n,38p,646b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
@@ -1413,7 +1429,7 @@ ic/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr17
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on election_result.pdf (12 pages, 301145 bytes).
+Output written on election_result.pdf (12 pages, 305191 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  234 compressed objects within 3 object streams

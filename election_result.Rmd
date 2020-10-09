@@ -1,6 +1,6 @@
 ---
 title: "The Liberal Party With the Lead and Some Emerging Issues That Require Government's Attention"
-author: "Chien-Che Hung"
+author: "Chien-Che Hung 1004330164"
 date: "10/7/2020"
 output: pdf_document
 ---
@@ -72,8 +72,7 @@ covid_prov$V1 <- as.integer(covid_prov$V1)
 covid_mean <- as.data.frame(aggregate(covid_prov$V1, list(covid_prov$V2), mean))
 covid_sd <- as.data.frame(aggregate(covid_prov$V1, list(covid_prov$V2), sd))
 # since there are only one sample for those two provinces, we will put 0 for there standard deviation
-covid_sd[8, 2] <- 0
-covid_sd[13, 2] <- 0
+covid_sd[6, 2] <- 0
 demo_count <- election_data %>% group_by(`Which province or territory do you live in?`) %>% count()
 info <- as.data.frame(cbind(demo_count, covid_mean$x, covid_sd$x))
 # the population in each province
@@ -268,48 +267,47 @@ rownames(potential_voters) <- c("Justin Trudeau/Liberal", "Erin O’Toole/Conser
 
 ```
 
-- To access the R Markdown report file please check this GitHub Repo link:
-
-https://github.com/frankkhung/election_simulation/blob/main/election_result.Rmd
-
-
-- To access the code that simulate the data please check this GitHub Repo link:
-
-https://github.com/frankkhung/election_simulation/blob/main/A2_report.Rmd
-
-Before running the simulation file, please download files in the following github repo links:
-
-- https://github.com/frankkhung/election_simulation/blob/main/98-402-X2016010-11.csv
-- https://github.com/frankkhung/election_simulation/blob/main/10952320201004121154.xlsx
-
-Before running the R Markdown report file, please download the following simulated election data. 
-
-- https://github.com/frankkhung/election_simulation/blob/main/election_data.xlsx
 
 # Non-Technical Executive Summary
 
 Petit Poll has been hired by the Liberal Party to conduct the 2020 October Monthly Polling updates on approval rating and public
 opinions of the current government. Future federal elections could reference the results of this survey and analysis. In our 
-survey methodology, each province has been assigned a sample number according to its ratio to Canada's population. The samples 
-would be interviewed by phone. Due to the COVID-19 pandemic situation right now, the ideology they had during the 2019 Federal 
+survey methodology, each province has been assigned to a sample number according to its ratio to Canada's population. The samples 
+would be interviewed by phone. Due to the COVID-19 pandemic situation right now, the ideology the Liberal Party had during the 2019 Federal 
 Election would ultimately be different. Thus, it is essential to understand people's thoughts under the current situation. After
 simulating the data, we found that people are generally satisfied with how the government responded to the COVID-19 situation.
 However, this pandemic also creates issues that people are starting to notice: the economy and health care. In general, people
-are satisfied with the government leads by the Liberal Party and Prime Minister Justin Trudeau, in which 36.8% of the
-respondents are willing to vote for him if the election is held today. Despite these simulated results positively showing the
-government's performance, our survey under-sampled people who support Bloc Quebecois in Quebec, which leads to the Liberal Party
-having a higher rating in Quebec. Since this survey identified the satisfaction and the issues that Canada faces, we should dive
-into the issue and see how the government can help. With the government's action, we can conduct the survey and see people's
-reactions to the actions. From modifying the policies and surveying continuously, the party can quickly know how to move forward
-with Canada.
+are satisfied with the government leads by the Liberal Party and Prime Minister Justin Trudeau, in which 37.2% of the
+respondents are willing to vote for him if the election is held today. Also, he recieves the highest rating in the age group 24-35 and 65+. For the approval ratings in the provinces, he has the largest lead in British Columnbia with 15% compared to the Conservative Party which comes second. (For detail statistics, please check Table 2.)
+
+Despite these simulated results positively showing the
+government's performance, our survey under-sampled people who support Bloc Quebecois in Quebec, which leads to the Liberal Party having a higher rating in Quebec. Since this survey identified the satisfaction and the issues that Canada faces, we should dive
+into the issue such as the economy and see how the government can help with the issue for our future work. After the government's action, we can conduct the survey again and see people's
+reactions to the actions. From modifying the policies and surveying continuously, the party can quickly know how to improve their policies.
 
 # Introduction
 
 This report is a simulated monthly polling update conducted by Petit Poll for the Liberal Party of Canada during the COVID-19
-Pandemic in 2020. Generally, the Liberal Party of Canada, led by Justin Trudeau, has a 5.9% lead compared to the Conservative
-Party led by Erin O'Toole. With the effects of COVID-19, job markets and health care systems start to play a significant role in
-Canada's issue. This report will discuss the survey methodology implemented and the results that we obtained after analyzing the
-survey in detail.
+Pandemic in 2020. This report would be references for future Federal Elections. Generally, the Liberal Party of Canada, led by Justin Trudeau, has a 5.9% lead compared to the Conservative
+Party led by Erin O'Toole. Also, the Liberal Party has a lead in different age groups and different provinces. With the effects of COVID-19, job markets and health care systems start to play a significant role in Canada's issue. This report will discuss the survey methodology implemented and the results that we obtained after analyzing the survey in detail. The following links are the GitHub Repo for this analysis, please follow the instructions to reproduce the results.
+
+- To access the R Markdown report file please check this GitHub Repo link:
+
+https://github.com/frankkhung/election_simulation/blob/main/election_result.Rmd
+
+- To access the code that simulate the data please check this GitHub Repo link:
+
+https://github.com/frankkhung/election_simulation/blob/main/A2_report.Rmd
+
+
+**Before running the simulation file, please download files in the following github repo links:**
+
+- https://github.com/frankkhung/election_simulation/blob/main/98-402-X2016010-11.csv
+- https://github.com/frankkhung/election_simulation/blob/main/10952320201004121154.xlsx
+
+**Before running the R Markdown report file, please download the following simulated election data. **
+
+- https://github.com/frankkhung/election_simulation/blob/main/election_data.xlsx
 
 # Survey Methodology
 
@@ -334,25 +332,20 @@ phone dialing would be a better option than Internet Surveys. It is comparativel
 different provinces could have different political stances, which we cannot distinguish through internet surveys.
 
 Since we are randomly generating the phone numbers, if there is a non-response sample, we would generate another phone number to
-survey. This will only be limited to non-response situations if the person conducting the survey decides not to record the
-response. Also, there would not be any privacy concerns in this situation because the survey does not ask samples' regarding
+survey. Also, there would not be any privacy concerns in this situation because the survey does not ask samples' regarding
 their personal information.
 
 \newpage
 
 # Results
 
-This report is a simulated monthly polling update conducted by Petit Poll for the Liberal Party of Canada during the COVID-19
-Pandemic in 2020. Generally, the Liberal Party of Canada, led by Justin Trudeau, has a 5.9% lead compared to the Conservative
-Party led by Erin O'Toole. With the effects of COVID-19, job markets and health care systems start to play a significant role in
-Canada's issue. This report will discuss the survey methodology implemented and the results that we obtained after analyzing the
-survey in detail.
+The survey touched on several topics: satisfaction with the government, how people value the government's ideology, response to COVID-19, issues in Canada, and citizens' voting intentions. This section will thoroughly go through these topics.
 
 ## Question: How is your satisfaction with the current Canadian government? (Figure 1)
 
 During the Pandemic, the Liberal Party is ahead of other contenders in Canada's political environment. 
-We can see that in Figure 1 below. 46.4% of the people we surveyed rated that they are somewhat satisfied with the current
-government and what they are doing. On the other hand, there are 14.05% of the people dissatisfied with the government.
+We can see that in Figure 1 below. 45% of the people we surveyed rated that they are somewhat satisfied with the current
+government and what they are doing. On the other hand, there are 16.3% of the people dissatisfied with the government.
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 sat %>% ggplot(aes(x = sat$`How's your satisfaction with the current Canadian government?`, y = sat$pct, label = scales::percent(pct), fill =`How's your satisfaction with the current Canadian government?` )) +
@@ -416,10 +409,10 @@ $$
 v(\bar{y}_{st}) = \sum^H_{h = 1}W_h^2(1-\frac{n_h}{N_h})\frac{s^2_{yh}}{n_h}
 $$
 With this information, we can get an inference of the population. The
-population's average rating is 7.0382, with a standard deviation of 0.00157 (Table 1).
+population's average rating is 7.0236, with a standard deviation of 0.001412 (Table 1).
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
-kable(stats, caption = "Population Inference from Stratified Sample", digits = 3)
+kable(stats, caption = "Population Inference from Stratified Sample", digits = 5)
 ```
 
 ## Question: In your opinion, what is the most important issue facing in Canada today? (Figure 4)
@@ -447,8 +440,8 @@ Housing, The Economy. Among all, concerns regarding the economy and health care 
 
 From the last question of the survey about the voting intentions with overall consideration of the situation now, we can
 separate into different categories to evaluate each leader's performance. The categories are the column names in the table,
-such as the ages and provinces. From a macro perspective, Justin Trudeau's Liberal Party receives an approval rating of 36.8%,
-which is 5.9% ahead of Erin O'Toole's Conservative Party (30.9%). Specifically, the voting intentions to vote for Justin Trudeau
+such as the ages and provinces. From a macro perspective, Justin Trudeau's Liberal Party receives an approval rating of 37.2%,
+which is 6.1% ahead of Erin O'Toole's Conservative Party (31.1%). Specifically, the voting intentions to vote for Justin Trudeau
 lead in the largest four provinces, Ontario, British Columbia, Alberta, and Quebec. Comparing to other provinces, the Liberal
 Party has the highest supporting percentage in British Columbia, with a difference of 14% ahead of the Conservative Party. For
 other provinces, the percentage of people who would vote for Justin Trudeau's Liberal Party is still higher than other leaders
@@ -463,10 +456,10 @@ kable(potential_voters, digits = 2, caption = "Voting Intentions (In Percentages
 # Discussion
 
 Regarding the 2020 October simulated polling result, it would be significantly affected by the government's response to the
-current COVID-19 situation. With the 46.6% of the surveyed people in the "Satisfied" category and the high rating on how the
+current COVID-19 situation. With the 45% of the people that we surveyed in the "Satisfied" category and the high rating on how the
 government responded to the situation for the past few months, we can say that the citizens are positively accepting what is
 coming from the Liberal Party and Justin Trudeau. Also, we can see it from his approval rating. Compared to his other direct
-competitor (Table 2), 36 .8% of the people would vote for him if the election is held today. Combining the chart of important
+competitor (Table 2), 37.2% of the people would vote for him if the election is held today. Combining the chart of important
 issues and how people value their ideology with the government, we can know that the governing party should shift their focus to
 creating more jobs and securing a better health care system. Overall, the Liberal Party, led by Justin Trudeau, leads other
 parties and leaders in different categories, regardless of provinces or different age groups. 
@@ -474,7 +467,7 @@ parties and leaders in different categories, regardless of provinces or differen
 # Weaknesses
 
 Despite the positivities that the survey and the result given to the Liberal Party, there are still some weaknesses. With this
-survey methodology, two provinces only have one respondent, Nunavut, and Yukon (Table 3). Only one respondent's situation would
+survey methodology, three provinces only have one or two respondent: Northwest Territories, Nanavut, and Yukon (Table 3). Only one respondent's situation would
 make the survey too biased in these provinces since one person cannot represent the population entirely. One solution to this
 situation would be to survey more people regardless of the ratio from the telephone dialing process and the weight they respond
 afterward. Second of all, the measuring standards for different people are different. For instance, the satisfaction level and
